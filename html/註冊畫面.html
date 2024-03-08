@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<form action="/action_page.php">
+  
+  <p style="font-size:50px;">Register</p>
+  
+  <label for="Name">Name:</label><br>
+  <input type="text" id="Name" name="Name"><br><br>
+  
+  <label for="Email">Email:</label><br>
+  <input type="email" id="Email" name="Email"><br><br>
+  
+  <label for="Account">Account:</label><br>
+  <input type="text" id="Account" name="Account"><br><br>
+  
+  <label for="Password">Password:</label><br>
+  <input type="password" id="Password" name="Password"><br><br>
+
+  <label for="Gender">Gender:</label><br>
+  <input type="radio" id="female" name="gender" value="Female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="male" name="gender" value="Male">
+  <label for="male">Male</label><br><br>
+
+  <label for="Birthday">Birthday:</label><br>
+  <input type="date" id="Birthday" name="Birthday"><br><br>
+  
+  <label for="Color">Color:</label><br>
+  <input type="color" id="Color" name="Color"><br><br>
+  
+  <label for="blood type">Blood Type:</label>
+  <select name="blood type" id="blood type">
+    <option value="O">O</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="AB">AB</option>
+  </select>
+  <br><br>
+  
+  <label for="phone">Phone Number:</label><br>
+  <input type="tel" id="phone" name="phone" placeholder="0912-345-678" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required><br><br>
+  
+  <label for="Subscribe">Subscribe:</label><br>
+  <input type="checkbox" id="Subscribe" name="Subscribe" value="Yes">
+  <label for="Subscribe"> Yes</label><br><br>
+  
+  <label for="myfile">Select a file:</label><br>
+  <input type="file" id="myfile" name="myfile"><br><br>
+  
+  <label for="introduce">Introduce Youself:</label><br>
+  <textarea id="introduce" name="introduce" rows="5" cols="40"></textarea><br><br>
+  
+  <input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>
+
