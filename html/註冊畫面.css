@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+body {
+  background-color: Azure;
+}
+</style>
+</head>
 <body>
-
 
 <form action="/action_page.php">
   
@@ -59,4 +65,3 @@
 
 </body>
 </html>
-
