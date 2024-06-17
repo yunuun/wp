@@ -1,0 +1,19 @@
+<html>
+<body>
+<button onclick="job1()">右移</button>
+<script>
+function job1() {
+    left += 10
+    b.style = `position:${position};left:${left};top:${top1};height:${height};width:${width}`
+}
+
+let left = 20
+let top1 = 20
+let height = 40
+let width = 80
+let position = 'absolute'
+let b = document.querySelector('button')
+b.style = `position:${position};left:${left};top:${top1};height:${height};width:${width}`
+</script>
+</body>
+</html>
