@@ -1,0 +1,53 @@
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 700px;
+  background: rgb(146, 168, 208);
+  position: relative;
+  transition: width 0.5s; 
+}
+
+div a{
+  position: absolute;
+  margin: 10px;
+  font-size: 20px;
+  text-align: left;
+  color: white;
+  font-family: cursive;
+  text-decoration: none;
+}
+div a:hover {
+  text-decoration: underline; 
+}
+div a:nth-child(1) {
+  top: 20px; 
+}
+div a:nth-child(2) {
+  top: 60px; 
+}
+div a:nth-child(3) {
+  top: 100px; 
+}
+</style>
+</head>
+<body>
+<div onclick = "clickevent(this)">
+<a href="https://yunuun.github.io/wp/hw1/%E8%87%AA%E6%88%91%E4%BB%8B%E7%B4%B9.html" target="_blank">自我介紹</a>
+<a href="https://yunuun.github.io/wp/hw2/%E8%A8%BB%E5%86%8A%E7%95%AB%E9%9D%A22.html" target="_blank">註冊畫面</a>
+<a href="https://yunuun.github.io/wp/hw5/3.html" target="_blank">按鈕</a>
+</div>
+<script>
+function clickevent(change){
+    if (change.style.width === '200px') {
+        change.style.width = '100px';
+  } else {
+    change.style.width = '200px';
+  }
+}
+</script>
+</body>
+</html>
+
+
