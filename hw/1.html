@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(210, 210, 231);
+}
+
+
+/* Style the header */
+.header {
+  background-image: url("svt3.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
+  text-align: center;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:rgb(146, 168, 208);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(194, 218, 255);
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  width: 25%;
+}
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Seventeen</h1>
+</div>
+
+<div class="topnav">
+  <a href="https://youtu.be/gbLkxltoD9o?si=taVN0EumBFfEhk5E">Performance</a>
+  <a href="https://youtu.be/bw4AuPrLWeA?si=EKjdfjpn1OS5Di6T">Vocal</a>
+  <a href="https://youtu.be/F2qZWD0F7rM?si=w8ErLx9txjo9DEG6">Hiphop</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>Team Picture</h2>
+    <a href="https://zh.wikipedia.org/zh-tw/Seventeen_(%E7%B5%84%E5%90%88)">
+      <img src="C:\yun\wp\hw\IMG_0230.JPG" alt="Team Picture">
+    </a>
+    <p>from left to right:</p>
+    <p>Min Gyu, Jeong Han, S.Coups, Vernon, Hoshi, The8, Woozi, Seung Kwan</p>
+    <p>Won Woo, DK, Joshua, Dino, Jun</p>
+  </div>
+  
+  <div class="column">
+    <h2>Hiphop Team Members</h2>
+    <a href="https://zh.wikipedia.org/wiki/%E5%B4%94%E5%8B%9D%E5%93%B2">
+      <img src="C:\yun\wp\hw\IMG_1818~photo.JPG">
+    </a>
+    <p>S.Coups</p>
+    <a href="https://zh.wikipedia.org/wiki/%E5%85%A8%E5%9C%93%E4%BD%91">
+      <img src="C:\yun\wp\hw\IMG_1446~photo.JPG">
+    </a>
+    <p>Won Woo</p>
+    <a href="https://zh.wikipedia.org/wiki/%E9%87%91%E7%8F%89%E5%A5%8E">
+      <img src="C:\yun\wp\hw\IMG_1822~photo.JPG">
+    </a>
+    <p>Min Gyu</p>
+    <a href="https://zh.wikipedia.org/wiki/%E5%B4%94%E7%80%9A%E7%8E%87">
+      <img src="C:\yun\wp\hw\GQdP051aIAEFe_o.jpg">
+    </a>
+    <p>Vernon</p>
+  </div>
+
+  <div class="column">
+    <h2>Vocal Team Members</h2>
+    <a href="https://zh.wikipedia.org/wiki/%E5%B0%B9%E6%B7%A8%E6%BC%A2">
+      <img src="C:\yun\wp\hw\螢幕擷取畫面 2024-06-21 011726.png">
+    </a>
+    <p>Jeong Han</p>
+    <a href="https://zh.wikipedia.org/wiki/%E6%B4%AA%E7%9F%A5%E7%A7%80">
+      <img src="C:\yun\wp\hw\螢幕擷取畫面 2024-06-21 011755.png">
+    </a>
+    <p>Joshua</p>
+    <a href="https://zh.wikipedia.org/wiki/%E6%9D%8E%E7%9F%A5%E5%8B%B3_(SEVENTEEN)">
+      <img src="C:\yun\wp\hw\IMG_0296~photo.JPG">
+    </a>
+    <p>Woozi</p>
+    <a href="https://zh.wikipedia.org/wiki/%E6%9D%8E%E7%A2%A9%E7%8F%89">
+      <img src="C:\yun\wp\hw\IMG_2003~photo.JPG">
+    </a>
+    <p>DK</p>
+    <a href="https://zh.wikipedia.org/wiki/%E5%A4%AB%E5%8B%9D%E5%AF%AC">
+      <img src="C:\yun\wp\hw\GQg3JW9a8AA4QG2.jpg">
+    </a>
+    <p>Seung Kwan</p>
+  </div>
+
+  <div class="column">
+    <h2>Performance Team Members</h2>
+    <a href="https://zh.wikipedia.org/wiki/%E6%96%87%E4%BF%8A%E8%BC%9D">
+      <img src="C:\yun\wp\hw\GNwrRgJaAAAnpnN.jpg">
+    </a>
+    <p>Jun</p>
+    <a href="https://zh.wikipedia.org/wiki/%E6%AC%8A%E9%A0%86%E6%A6%AE">
+      <img src="C:\yun\wp\hw\IMG_0233.JPG">
+    </a>
+    <p>Hoshi</p>
+    <a href="https://zh.wikipedia.org/wiki/%E5%BE%90%E6%98%8E%E6%B5%A9">
+      <img src="C:\yun\wp\hw\GQYgCQBaIAMOKy1.jpg">
+    </a>
+    <p>The8</p>
+    <a href="https://zh.wikipedia.org/wiki/%E6%9D%8E%E7%87%A6_(SEVENTEEN)">
+      <img src="C:\yun\wp\hw\GQghoSWbYAEdDD6.jpg">
+    </a>
+    <p>Dino</p>
+  </div>
+</div>
+
+</body>
+</html>
